@@ -1,21 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liam Grant Hewitt</title>
+  <link rel="stylesheet" type="text/css" href="public/styles/inline.css">
+  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,500" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta name="google-site-verification" content="1Fy2R8Fok-k_yvLYbs3gxzu-TCRybsGn9SxqcTn-f_w" />
-	<meta http-equiv="refresh" content="0; url=https://ca.linkedin.com/in/liam-hewitt-5134b8a4" />
-
-    <title>Liam Hewitt</title>
-
-    
+  <!---REMOVE THIS-->
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
 
 </head>
+<body>
+  <div class="background-img" >
+    <header class="header">
+      <span>
+        <a class="header-text" href=".">
+          <img src="public/images/LiamHewitt.jpg" class="profile"/>
+          <text>
+            <h1>
+              Hi, I'm <b class="name">Liam Hewitt</b>
+            </h1>
+          </text>
+        </a>
+        <links class="header-links-container">
+          <a href="#employment" class="header-link">
+            Employment
+          </a>
+          <a href="#education" class="header-link">
+          Education & Skills
+          </a>
+          <a href="#contact" class="header-link">
+            Contact
+          </a>
+        </links>
+      </span>
+    </header>
+  </div>
+  <div class="background-employment">
+    <div class="employment-section" id="employment">
+      <h2>
+        Employment
+      </h2>
+      <div class="slideshow-container">
+        <div class="slide-container">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <job class="job fade">
+            <div class="job-img-title">
+              <div class="job-img-wrapper"> 
+                <img src="public/images/logo-ilm.png"">
+              </div>
+              <div class="company-title">
+                <h3>Industrial Light & Magic</h3>
+                <h4>Training Technical Specialist</h4>
+                <h4>May 2019 - Present</h4>
+              </div>
+              <!-- <div class="numbertext">1 / 4</div> -->
+            </div>
+            <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+            <ul>
+              <li class="accomplishment">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+              </li>
+              <li class="accomplishment">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+              </li>
+            </ul>
+          </div>
+          </job>
+          <job class="job fade">
+            <div class="job-img-title">
+              <div class="job-img-wrapper"> 
+                <img src="public/images/logo-dneg.png"">
+              </div>
+              <div class="company-title">
+                <h3>DNEG Vancouver</h3>
+                <h4>Software Engineer (Pipeline Support)</h4>
+                <h4>September 2018 - May 2019</h4>
+              </div>
+            </div>
+            <div class="content">
+              Provided technical set up and support for VFX  show pipelines.
+              <ul>
+                <li class="accomplishment">
+                  Implemented custom validation checks in Python improving users' awareness of and 
+                  responsiveness to recurring pipeline issues 
+                </li>
+                <li class="accomplishment">
+                  Researched and prepared technical documentation on video codecs, colour spaces, 
+                  and image formats providing reference material on configuring client deliverables
+                </li>
+              </ul>
+            </div>
+          </job>
+          <job class="job fade">
+            <div class="job-img-title">
+              <div class="job-img-wrapper"> 
+                <img src="public/images/logo-al.png"">
+              </div>
+              <div class="company-title">
+                <h3>Animal Logic</h3>
+                <h4>Render Wrangler (Data Operations)</h4>
+                <h4>April 2017 - August 2018</h4>
+              </div>
+            </div>
+            <div class="content">
+              Developed automated tools in Python which improved my team’s 
+              responsiveness in detecting, troubleshooting, and reporting technical issues 
+              impacting the production of animated feature films.
+              <ul>
+                <li class="accomplishment">
+                  Gathered and analysed file system, Linux, and network data used to optimize 
+                  the allocation of render farm resources.
+                </li>
+                <li class="accomplishment">
+                  Wrote, narrated, and edited video materials and provided training to all newly-hired
+                    technical and production staff in the use of an internal render farm management system.
+                </li>
+              </ul>
+            </div>
+            </job>
+            <job class="job fade">
+              <div class="job-img-title">
+                <div class="job-img-wrapper"> 
+                  <img src="public/images/logo-ubccs.png">
+                </div>
+                <div class="company-title">
+                  <h3>UBC Computer Science</h3>
+                  <h4>Undergraduate Teaching Assistant</h4>
+                  <h4>September 2015 - April 2017</h4>
+                </div>
+              </div>
+            <div class="content">
+              Assisted students with learning C programming in both lecture and tutorial environments.
+                <ul>
+                  <li class="accomplishment">
+                    Received an average teaching assistant score of 5/5 from all 217 evaluations received to date.
+                  </li>
+                  <li class="accomplishment">
+                    Held weekly office hours to provide academic assistance to students and resolve technical issues with Visual Studio and Xcode.
+                  </li>
+                </ul>
+              </div>
+            </job>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="icons">
+            <span class="dot" onclick="currentSlide(1)"> 
+              <img src="public/images/logo-ilm.png" />
+            </span>
+            <span class="dot" onclick="currentSlide(2)"> 
+              <img src="public/images/logo-dneg.png" />
+            </span>
+            <span class="dot" onclick="currentSlide(3)"> 
+              <img src="public/images/logo-al.png" />
+            </span>
+            <span class="dot" onclick="currentSlide(4)"> 
+              <img src="public/images/logo-ubccs.png" />
+            </span>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="background-education">
+    <education class="education" id="education">
+      <h2>
+        Education & Skills
+      </h2>
+      <div class="slideshow-container">
+        <div class="slide-container">
+          <div class="job-img-wrapper"> 
+            <img src="public/images/logo-ubc.png"/>
+          </div>
+          <h3>UBC Computer Science</h3>
+          <h4>September 2015 - April 2017</h4>
+          <div class="content">
+          </div>
+        </div>
+      </div>
+    </education>
+
+  </div>
+
+  <div class="background-education">
+    <contact class="contact" id="contact">
+      <h2>
+        Contact
+      </h2>
+      <!-- <a href="mailto:liamghewitt@gmail.com" target="_blank">
+        <img src="images/icons/black-back-closed-envelope-shape.png" class="icon">
+        liamghewitt@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/liam-grant-hewitt/" target="_blank">
+        <img src="images/icons/linkedin-logo.png" class="icon">
+        Liam Hewitt
+      </a> -->
+  </div>
 
 
+
+  </contact>
+
+  <script src="public/scripts/app.js"></script>
+  
+  <script>
+    
+  </script>
+
+</body>
 </html>
